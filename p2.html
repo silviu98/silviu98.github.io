@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>p2</title>
+      
+  <meta http-equiv="content-type"
+ content="text/html; charset=ISO-8859-1">
+</head>
+  <body>
+<a href="dreapta.html"><img
+ src="240_F_103363818_i3qmVeh1YcHs50BwU8yuNEY8GtfAOcqx.jpg" alt=""
+ width="140" height="140">
+</a> 
+<div class="level4">   
+<p><br>
+ </p>
+ 
+<div align="center"><b><big><big>TIPURI DE DATE IN C++</big></big></b><br>
+ </div>
+ 
+<p><br>
+  Tipurile de date reprezint&#259; tipul de informa&#539;ie care poate fi stocat  &icirc;ntr-o 
+variabil&#259;. Un tip de data define&#537;te at&acirc;t gama de valori pe care o  poate
+lua o variabil&#259; de un anume tip c&acirc;t &#537;i opera&#539;iile care se pot  efectua
+asupra ei.<br>
+  &Icirc;n continuare sunt prezentate tipurile fundamentale  ale limbajului 
+C, &icirc;mpreun&#259; cu o scurt&#259; descriere a acestora: </p>
+   
+<ul>
+   <li class="level1">     
+    <div class="li"> <code>char</code> - reprezentat printr-un num&#259;r pe 8 
+bi&#539;i (un byte). Poate fi echivalent fie cu <code>signed char</code>, fie cu
+    <code>unsigned char</code>. Vezi observa&#539;ia de mai jos cu privire la
+acest lucru. Este folosit &icirc;n general pentru reprezentarea caracterelor
+    <abbr title="American Standard Code for Information Interchange">ASCII</abbr>.</div>
+  </li>
+   <li class="level1">     
+    <div class="li"> <code>int</code> - stocheaz&#259; numere  &icirc;ntregi. Lungimea
+sa (&#537;i implicit plaja de valori) este dependent&#259; de  compilator si sistemul
+de operare considerat. <strong>&Icirc;n general</strong>, pe Linux, <code>int</code>
+se reprezint&#259; pe 32 de bi&#539;i (deci 4 bytes). &Icirc;n acest caz, poate memora
+numere din intervalul [&#8211;2.147.483.648; 2.147.483.647].</div>
+  </li>
+   <li class="level1">     
+    <div class="li"> <code>float</code> - reprezint&#259; un num&#259;r real stocat 
+&icirc;n virgul&#259; mobil&#259;, &icirc;n gama de valori 3.4E+/-38. &Icirc;n <strong>general</strong> 
+respect&#259; formatul <font color="#000000"><a
+ href="https://en.wikipedia.org/wiki/IEEE_floating_point"
+ class="urlextern"
+ title="https://en.wikipedia.org/wiki/IEEE_floating_point"
+ rel="nofollow">IEEE 754 single-precision</a>, ceea ce &icirc;nseamn&#259; c&#259; dimensiunea
+sa va fi 4 (octe&#539;i) &#537;i num&#259;rul va avea cel pu&#539;in 7 zecimale exacte.</font></div>
+  </li>
+   <li class="level1">     
+    <div class="li"> <font color="#000000"><code>double</code> - reprezinta 
+un num&#259;r real stocat &icirc;n virgul&#259; mobil&#259;, &icirc;n gama de valori 1.7E+/-308. 
+&Icirc;n <strong>general</strong> respect&#259; formatul <a
+ href="https://en.wikipedia.org/wiki/IEEE_floating_point"
+ class="urlextern"
+ title="https://en.wikipedia.org/wiki/IEEE_floating_point"
+ rel="nofollow">IEEE 754 double-precisiom</a>,</font> ceea ce &icirc;nseamn&#259; 
+c&#259; dimensiunea sa va fi 8 (octe&#539;i) &#537;i num&#259;rul va avea cel pu&#539;in 15 zecimale 
+exacte.</div>
+  </li>
+ 
+</ul>
+    
+<p> Acestor tipuri fundamentale li se mai pot ad&#259;uga un num&#259;r de specificatori, 
+dup&#259; cum urmeaz&#259;: </p>
+   
+<ul>
+   <li class="level1">     
+    <div class="li"> <code>short</code> - aplicabil doar pentru <code>int</code>. 
+Tipul rezultat are <strong>cel pu&#539;in</strong> 16 bi&#539;i.</div>
+  </li>
+   <li class="level1">     
+    <div class="li"> <code>long</code> - aplicabil pentru <code>int</code> 
+&#537;i <code>double</code>. <code>long int</code> se garanteaz&#259; c&#259; are <strong>cel 
+pu&#539;in</strong> 32 bi&#539;i. Legat de <code>long double</code> se garanteaz&#259; doar 
+c&#259; este mai mare sau egal ca dimensiune dec&acirc;t <code>double</code>, care
+la r&acirc;ndul lui este mai mare sau egal dec&acirc;t <code>float</code>.</div>
+  </li>
+ 
+</ul>
+    
+<p> &#537;i </p>
+   
+<ul>
+   <li class="level1">     
+    <div class="li"> <code>signed</code> - aplicabil pentru <code>int</code> 
+&#537;i <code>char</code>. O variabil&#259; declarat&#259; <code>int</code> este implicit 
+    <code>signed</code>. Cuv&acirc;ntul cheie exist&#259; &icirc;n acest caz doar 
+pentru cazuri &icirc;n care vrem s&#259; spunem acest lucru explicit. Aplicat pe
+    <code>char</code> (&#8658; <code>signed char</code>), ne garanteaz&#259; faptul
+c&#259; acea variabil&#259; va putea avea orice valoare din intervalul [-128; 127].</div>
+   </li>
+   <li class="level1"> <br>
+   </li>
+   <li class="level1">     
+    <div class="li"> <code>unsigned</code> - precizeaz&#259; faptul c&#259; valoarea 
+variabilei este pozitiv&#259;. Aplicabil doar tipurilor &icirc;ntregi.</div>
+  </li>
+ 
+</ul>
+    
+<p> Cei 4 specificatori au fost &icirc;mp&#259;r&#539;i&#539;i &icirc;n 2 grupuri de specificatori 
+complementari. Asta &icirc;nseamn&#259; c&#259; expresia <code>long signed int a;</code> 
+este corect&#259;. La fel este &#537;i <code>unsigned short int b;</code>. Defini&#539;ia 
+<code>short long int c;</code> nu este &icirc;ns&#259; corect&#259;. De asemenea, <strong>nu</strong> 
+oricare specificator din prima categorie cu unul din a doua se pot combina. 
+De exemplu, <code>long signed char d;</code> &#537;i <code>long unsigned double 
+e;</code> nu sunt corecte. </p>
+    
+<p> <strong>Observa&#539;ie!</strong> &Icirc;n C exist&#259; 3 &#8220;tipuri de <code>char</code>&#8221;: 
+<code>char</code>, <code>signed char</code>, <code>unsigned char</code>. Acest
+lucru este diferit fa&#539;&#259; de <code>int</code>, spre exemplu, unde se garanteaz&#259;
+c&#259; <code>signed int</code> este <strong>mereu</strong> acela&#537;i tip ca <code>int</code>.
+Pentru <code>char</code> acest lucru nu este adev&#259;rat: o variabil&#259; declarat&#259;
+<code>char</code>, poate fi, &icirc;n func&#539;ie de compilator/sistem de operare
+fie <code>signed char</code>, fie <code>unsigned char</code>. Diferen&#539;a este
+subtil&#259; &icirc;ns&#259; important&#259; atunci c&acirc;nd vrem s&#259; scriem cod C <strong>portabil</strong>.
+Ca <strong>best practice</strong>, folosim:  </p>
+   
+<ul>
+   <li class="level1">     
+    <div class="li"> <code>char</code> - atunci c&acirc;nd vrem s&#259; stoc&#259;m 
+un caracter <abbr
+ title="American Standard Code for Information Interchange">ASCII</abbr>.</div>
+  </li>
+   <li class="level1">     
+    <div class="li"> <code>signed char</code> - atunci c&acirc;nd vrem s&#259; 
+stoc&#259;m un &icirc;ntreg din intervalul [-128; 127].</div>
+  </li>
+   <li class="level1">     
+    <div class="li"> <code>unsigned char</code> - atunci c&acirc;nd vrem s&#259;
+stoc&#259;m orice &icirc;ntreg din intervalul [0; 255].</div>
+  </li>
+ 
+</ul>
+    
+<p> <strong>Observa&#539;ie!</strong> &Icirc;n paragraful anterior, acolo unde 
+s-a folosit sintagma <em>&icirc;n general&#8230;</em> &icirc;nseamn&#259; c&#259; acel lucru 
+nu este necesar adev&#259;rat atunci c&acirc;nd compil&#259;m codul cu compilatorul 
+<strong>X</strong> (gcc, clang, MSVC, Intel, XL C, etc), pe sistemul de operare 
+<strong>Y</strong> (Linux, Windows, SunOS, AIX, etc)  &#537;i pe arhitectura hardware 
+<strong>Z</strong> (x86, ARM, PowerPC, Sparc, etc). &Icirc;n unele cazuri 
+vrem s&#259; scriem cod <strong>portabil</strong>, deci nu vrem s&#259; facem prezum&#539;ii 
+cu privire la aceste lucruri. Pe parcurs o s&#259; devin&#259; clar de ce &icirc;n <strong>C</strong>
+unele lucruri nu sunt exact specificate. </p>
+    
+<p> Uneori ne dorim s&#259; folosim tipuri a c&#259;ror dimensiune este exact  specificat&#259; 
+(ca &icirc;n cazul lucrului cu struct-uri, care va fi discutat  &icirc;ntr-un 
+laborator viitor). Pentru asta, putem folosi tipurile definite  &icirc;n headerul
+<code>&lt;stdint.h&gt;</code>. C&acirc;teva exemple sunt urm&#259;toarele: <code>int8_t</code>,
+<code>int16_t</code>, <code>int64_t</code>, <code>uint32_t</code>. Pentru
+o list&#259; complet&#259; consulta&#539;i <a
+ href="http://en.cppreference.com/w/c/types/integer" class="urlextern"
+ title="http://en.cppreference.com/w/c/types/integer" rel="nofollow">documenta&#539;ia</a> 
+<strong>oficial&#259;</strong> (online) a limbajului. </p>
+    
+<p> <strong>Aten&#539;ie!</strong> Nu abuza&#539;i de aceste tipuri. Ele au fost introduse 
+&icirc;n limbaj &icirc;n special  pentru a permite efectuarea opera&#539;iile pe
+bi&#539;i &icirc;ntr-un mod <strong>portabil</strong>. Dac&#259; ave&#539;i nevoie de un
+contor pentru o instruc&#539;iune <code>for</code>, cel mai probabil tipul pe
+care &icirc;l vre&#539;i este <code>int</code>. </p>
+    
+<p> Determinarea corect&#259; a tipurilor de date care vor fi folosite este  esen&#539;ial&#259; 
+pentru securitatea &#537;i buna func&#539;ionare a aplica&#539;iilor pe care  le scrie&#539;i. 
+&Icirc;n cazul &icirc;n care valoarea con&#539;inut&#259; de o variabil&#259; depa&#537;e&#537;te
+ limitele impuse de tipul de date folosit, se produce a&#537;a-numit-ul  over-flow 
+care poate cauza erori aparent inexplicabile. (<em>Ca o  anecdot&#259;, &icirc;n 
+fiecare an (p&acirc;n&#259; acum trei sau patru ani), Bill Gates  primea de la 
+FISC o scrisoare prin care era somat s&#259; i&#537;i plateasc&#259;  taxele, deoarece ap&#259;rea 
+in eviden&#539;ele lor ca av&acirc;nd datorii &icirc;nsemnate.  Asta deoarece valoarea
+averii lui (mult peste 4.000.000.000$) producea  un overflow &icirc;n softul
+folosit de c&#259;tre FISC. &Icirc;n final situa&#539;ia a fost  solu&#539;ionat&#259;, introduc&acirc;nd
+un c&acirc;mp special pentru el &icirc;n softul folosit. (A  modifica softul
+peste tot ar fi introdus un plus de stocare  nejustificat pentru fiecare
+din cei aproximativ 300.000.000 de ceta&#539;eni  ai SUA.)</em> ) </p>
+   </div>
+ <br>
+</body>
+</html>

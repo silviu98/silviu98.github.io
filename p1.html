@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>p1</title>
+             
+  <meta http-equiv="content-type"
+ content="text/html; charset=ISO-8859-1">
+</head>
+  <body bgcolor="#cccccc" text="#000000" link="#0000ee" alink="#0000ee"
+ vlink="#551a8b">
+<a href="dreapta.html"><img
+ src="240_F_103363818_i3qmVeh1YcHs50BwU8yuNEY8GtfAOcqx.jpg" alt=""
+ width="140" height="140">
+</a><br>
+<br>
+<br>
+   
+<div align="center"><b><big><big><big>Programare Orientat&atilde; pe Obiecte 
+(POO) cu C#  . </big></big></big></b><br>
+   
+<div align="left"><small><br>
+ <big><big><big><big> Tipuri de date obiectuale.</big></big></big></big></small>
+ 
+<div
+ style="left: 141.732px; top: 500.767px; font-size: 18.3333px; font-family: sans-serif;">&nbsp;<small>Un 
+tip de date abstract (ADT) este o entitate caracterizat&#259; printr-o structur&#259; 
+de date &#537;i un ansamblu de opera&#539;ii aplicabile acestor date. Consider&acirc;nd, 
+&icirc;n rezolvarea unei <br>
+ &nbsp;probleme de gestiune a accesului utilizatorilor la un anumit site, 
+tipul abstract <br>
+ &nbsp;USER,vom obseva c&#259; sunt multe date ce caracterizeaz&#259; un utilizator 
+Internet. Totu&#537;i se va <br>
+ &nbsp;&#539;ine cont doar de datele semnificative pentru problem&#259; data. Astfel, 
+&#8221;culoarea <br>
+ &nbsp;ochilor&#8221; este irelevant&#259; &icirc;n acest caz, &icirc;n timp ce &#8221;data 
+nasterii&#8221; poate fi important&#259;. &Icirc;n <br>
+ &nbsp;aceea&#537;i idee, opera&#539;ii specifice c&#259; &#8221;se inregistreaza&#8221;, &#8221;comanda on-line&#8221; 
+pot fi rele- <br>
+ &nbsp;vante, &icirc;n timp ce opera&#539;ia &#8221;mananca&#8221; nu este, &icirc;n cazul 
+nostru. Evident, nici nu se pun <br>
+ &nbsp;&icirc;n discu&#539;ie date sau opera&#539;ii nespecifice (&#8221;numarul de laturi&#8221; 
+sau ac&#539;iunea &#8221;zboara&#8221;). <br>
+ &nbsp;Opera&thorn;iile care sunt accesibile din afar&#259; entita&thorn;ii formeaz&#259; 
+interfa&#539;&#259; acesteia. Astfel, <br>
+ &nbsp;opera&#539;ii interne cum ar fi conversia datei de na&#537;tere la un num&#259;r
+standard calculat de <br>
+ &nbsp;la 01.01.1900 nu fac parte din interfa&#539;&#259; tipului de date abstract, 
+&icirc;n timp ce opera&#539;ia <br>
+ &nbsp;&#8221;plaseaza o comand&#259; on-line&#8221; face parte, deoarece permite interac&thorn;iunea 
+cu alte <br>
+ &nbsp;obiecte (SITE, STOC etc.) <br>
+ &nbsp;O instan&#539;&#259; a unui tip de date abstract este o &#8221;concretizare&#8221; a tipului 
+respectiv, for-mat&#259; din valori efective ale datelor. <br>
+ &nbsp;Un tip de date obiectual este un tip de date care implementeaz&#259; un 
+tip de date abstract. Vom numi operatiile implementate &icirc;n cadrul tipului 
+de date abstract <br>
+ &nbsp;metode . <br>
+ &nbsp;Spunem c&#259; datele &#537;i metodele sunt membrii unui tip de date obiectual. 
+Folosirea unui <br>
+ &nbsp;astfel de tip presupune: existen&#539;a defini&#539;iei acestuia, apelul metodelor 
+&#537;i accesul la date. <br>
+ &nbsp;Un exemplu de-acum clasic de tip de date abstract este STIVA. Ea poate 
+avea c&#259; date: <br>
+ &nbsp;numerele naturale din stiva, capacitatea stivei, v&acirc;rful etc. 
+Iar opera&thorn;iile specifice pot fi: <br>
+ &nbsp;introducerea &icirc;n stiva (push) &#537;i extragerea din stiva (pop).
+La implementarea tipului STIVA, <br>
+ &nbsp;vom defini o structur&#259; de date care s&#259; retina valorile memorate &icirc;n 
+stiva &#537;i c&acirc;mpuri de date <br>
+ &nbsp;simple pentru: capacitate, num&#259;r de elemente etc. Vom mai defini metode 
+(subpro- <br>
+ &nbsp;grame) capabile s&#259; creeze o stiva vid&#259;, care s&#259; introduc&#259; o valoare 
+&icirc;n stiva, s&#259; extrag&#259; va- <br>
+ &nbsp;loarea din v&acirc;rful stivei, s&#259; testeze dac&#259; stiva este vid&#259; sau 
+dac&#259; stiva este plin&#259; etc. <br>
+ &nbsp;Crearea unei instan&thorn;e noi a unui tip obiectual, presupune opera&thorn;ii 
+specifice de <br>
+ &nbsp;&#8221;construire&#8221; a noului obiect, metod&#259; corespunz&#259;toare purt&acirc;nd 
+numele de <br>
+ &nbsp;constructor. Analog, la desfiin&#539;area unei instan&#539;e &#537;i eliberarea spa&#539;iului 
+de memorie <br>
+ &nbsp;aferent datelor sale, se aplic&#259; o metod&#259; specific&#259; numit&#259; destructor. 
+<br>
+ &nbsp;O aplica&#539;ie ce utilizeaz&#259; tipul obiectual STIVA, va putea construi 
+dou&#259; sau mai <br>
+ &nbsp;multe stive (de c&#259;r&#539;i de joc, de exemplu), le va umple cu valori distincte, 
+va mut&#259; va- <br>
+ &nbsp;lori dintr-o stiva &icirc;n alt&#259; dup&#259; o anumit&#259; regul&#259; desfiin&#539;&acirc;nd 
+orice stiva golit&#259;, p&acirc;n&#259; ce <br>
+ &nbsp;r&#259;m&acirc;ne o singur&#259; stiva. De observat c&#259; toate aceste prelucr&#259;ri 
+recurg la datele, con- <br>
+ &nbsp;structorul, destructorul &#537;i la metodele din interfa&#539;&#259; tipului STIVA 
+descris mai sus. <br>
+ &nbsp;Principalul tip obiectual &icirc;nt&acirc;lnit &icirc;n majoritatea 
+mediilor de dezvoltare (Viisual <br>
+ &nbsp;Basic, Delphi, C++, Java, C#) poart&#259; numele de clas&#259; (class). Exist&#259; 
+&#537;i alte tipuri obiectuale(struct,object). O instan&#539;&#259; a unui tip obiectual 
+poart&#259; numele de obiect. <br>
+ &nbsp;La implementare, datele &#537;i metodele asociate trebuie s&#259; fie complet 
+&#537;i corect de- <br>
+ &nbsp;finite, astfel &icirc;nc&acirc;t utilizatorul s&#259; nu fie nevoit s&#259;
+&#539;in&#259; cont de detalii ale acestei &icirc;mple- <br>
+ &nbsp;mentari. El va acces&#259; datele, prin intermediul propriet&#259;&#539;ilor &#537;i va 
+efectu&#259; opera&#539;iile ,<br>
+ prin&nbsp; intermediul&nbsp; metodelor&nbsp; puse&nbsp; la&nbsp; dispozi&thorn;ie&nbsp; 
+de&nbsp; tipul&nbsp; obiectual&nbsp; definit.&nbsp; Spunem&nbsp; c&atilde;<br>
+ tipurile&nbsp; de&nbsp; date&nbsp; obiectuale&nbsp; respect&atilde;&nbsp; 
+principiul &nbsp;<br>
+ &icirc;ncapsul&atilde;rii.&nbsp; Astfel,&nbsp; programatorul&nbsp; ce utilizeaz&atilde;&nbsp; 
+un&nbsp; tip&nbsp; obiectual&nbsp; CONT&nbsp; (&icirc;n&nbsp; banc&atilde;)&nbsp; 
+nu&nbsp; trebuie&nbsp; s&atilde;&nbsp; poarte&nbsp; grija&nbsp; modului&nbsp; 
+cum sunt&nbsp; reprezentate&nbsp; &icirc;n&nbsp; memorie&nbsp; datele&nbsp; 
+referitoare&nbsp; la&nbsp; un&nbsp; cont&nbsp; <br>
+ sau&nbsp; a&nbsp; algoritmului&nbsp; prin are se realizeaz&atilde; actualizarea 
+soldului conform operatiilor de depunere, extragere si<br>
+ aplicare&nbsp; a&nbsp; dob&acirc;nzilor.&nbsp; EL&nbsp; va&nbsp; utiliza&nbsp; 
+unul&nbsp; sau&nbsp; mai&nbsp; multe&nbsp; conturi&nbsp; (instante&nbsp; ale&nbsp;
+tipului<br>
+ CONT), acces&acirc;nd propriet&atilde;tile si metodele din interfat&atilde;, 
+realizatorul tipului obiectual<br>
+ asum&acirc;ndu-si acele griji &icirc;n momentul definirii tipului CONT.<br>
+ Permi&thorn;&acirc;nd extensia tipurilor de date abstracte, clasele pot
+avea la implementare:<br>
+ &#8226;date si metode caracterisitice fiec&atilde;rui obiect din clas&atilde;
+(membri de tip instant&atilde;), <br>
+ &#8226;date si metode specifice clasei (membri de tip clas&atilde;). <br>
+ Astfel, clasa STIVA poate beneficia, &icirc;n plus, si de date ale clasei 
+cum ar fi: num&atilde;rul<br>
+ de&nbsp; stive&nbsp; generate,&nbsp; num&atilde;rul&nbsp; maxim&nbsp; sau&nbsp; 
+num&atilde;rul&nbsp; minim&nbsp; de&nbsp; componente&nbsp; ale&nbsp; stivelor<br>
+ existente&nbsp; etc.&nbsp; Modificatorul&nbsp; static plasat&nbsp; la&nbsp; 
+definirea&nbsp; unui&nbsp; membru&nbsp; al&nbsp; clasei&nbsp; face&nbsp; ca<br>
+ acela&nbsp; s&atilde;&nbsp; fie&nbsp; un&nbsp; membru&nbsp; de&nbsp; clas&atilde;,&nbsp; 
+nu&nbsp; unul&nbsp; de&nbsp; tip&nbsp; instan&thorn;&atilde;.&nbsp; Dac&atilde;&nbsp; 
+&icirc;n&nbsp; cazul&nbsp; membrilor<br>
+ nestatici, exist&atilde; c&acirc;te un exemplar al membrului respectiv pentru 
+fiecare instan&thorn;&atilde; a clasei, membrii statici sunt unici, fiind 
+accesati &icirc;n comun de toate instantele clasei. Mai<br>
+ mult, membrii statici pot fi referiti chiar si f&atilde;r&atilde; a crea 
+vreo instant&atilde; a clasei respective.</small></div>
+ 
+<div
+ style="left: 216.87px; top: 1279.08px; font-size: 18.3333px; font-family: sans-serif;"> 
+<div
+ style="left: 141.731px; top: 921.785px; font-size: 18.3333px; font-family: sans-serif;"></div>
+  </div>
+  <br>
+  </div>
+  </div>
+  <br>
+ <br>
+</body>
+</html>

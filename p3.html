@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>p3</title>
+      
+  <meta http-equiv="content-type"
+ content="text/html; charset=ISO-8859-1">
+</head>
+  <body>
+<a href="dreapta.html"><img
+ src="240_F_103363818_i3qmVeh1YcHs50BwU8yuNEY8GtfAOcqx.jpg" alt=""
+ width="140" height="140">
+</a><br>
+<br>
+<b>APLICATIA 1.</b><br>
+ <br>
+ using System;<br>
+ using System.Collections.Generic;<br>
+ using System.Text;<br>
+ namespace ExempluTipuriValoare<br>
+ {<br>
+ &nbsp;&nbsp;&nbsp; public struct Masina<br>
+ &nbsp;&nbsp;&nbsp; {<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //variabila instanta<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public int anFabricatie;<br>
+ &nbsp;&nbsp;&nbsp; }<br>
+ &nbsp;&nbsp;&nbsp; class Program<br>
+ &nbsp;&nbsp;&nbsp; {<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; static void Main(string[] args)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //creez 
+obiectul masina, numit Seat<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Masina 
+seat = new Masina();<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //atribui 
+o valoare variabilei an a instantei seat<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; seat.anFabricatie 
+= 2009;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Masina 
+opel = seat;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // se 
+initializeaza prin copiere variabila sb<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine("Masina 
+Seat este din anul {0}.", seat.anFabricatie);<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine("Masina 
+Opel este din anul {0} prin initializare.", opel.anFabricatie);<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //schimb 
+valoarea variabile an a instantei seat<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; seat.anFabricatie 
+= 2010;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine("Masina 
+Seat este din anul {0}.", seat.anFabricatie);<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //valoare 
+variabilei an a instantei opel ramane aceeasi<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine("Masina 
+Opel este din anul este {0}.", opel.anFabricatie);<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.ReadLine();<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+ &nbsp;&nbsp;&nbsp; }<br>
+ }<br>
+ <br>
+ <big><big><b>&nbsp;APLICATIA 2.</b></big></big><br>
+ <br>
+ 
+<div
+ style="left: 202.021px; top: 139.952px; font-size: 16.6667px; font-family: monospace;">public 
+class Copil</div>
+ 
+<div
+ style="left: 202.021px; top: 163.286px; font-size: 16.6667px; font-family: monospace;">{ 
+public const int nr_max = 5;     //constant&atilde;</div>
+ 
+<div
+ style="left: 220.355px; top: 186.619px; font-size: 16.6667px; font-family: monospace;">public 
+static int nr_copii=0;    //c&acirc;mp simplu (variabil&atilde;)</div>
+ 
+<div
+ style="left: 220.355px; top: 209.952px; font-size: 16.6667px; font-family: monospace;">static 
+Copil[] copii=new Copil[nr_max];  //c&acirc;mp de tip tablou (variabil&atilde;) 
+</div>
+ 
+<div
+ style="left: 220.355px; top: 233.286px; font-size: 16.6667px; font-family: monospace;">public 
+static void adaug_copil(Copil c)  //metod&atilde;</div>
+ 
+<div
+ style="left: 220.355px; top: 256.619px; font-size: 16.6667px; font-family: monospace;">{ 
+copii[nr_copii++] = c;</div>
+ 
+<div
+ style="left: 238.688px; top: 279.952px; font-size: 16.6667px; font-family: monospace;">if 
+(nr_copii==nr_max) throw new Exception(&#8220;Prea multi copii&#8221;);</div>
+ 
+<div
+ style="left: 220.355px; top: 303.286px; font-size: 16.6667px; font-family: monospace;">}</div>
+ 
+<div
+ style="left: 220.355px; top: 326.619px; font-size: 16.6667px; font-family: monospace;">public 
+static void afisare()     //metod&atilde;</div>
+ 
+<div
+ style="left: 220.355px; top: 349.952px; font-size: 16.6667px; font-family: monospace;">{</div>
+ 
+<div
+ style="left: 257.021px; top: 373.286px; font-size: 16.6667px; font-family: monospace;">Console.WriteLine(&#8220;Sunt 
+{0} copii:&#8221;, nr_copii);</div>
+ 
+<div
+ style="left: 257.021px; top: 396.619px; font-size: 16.6667px; font-family: monospace;">for 
+(int i = 0; i&lt;nr_copii; i++)</div>
+ 
+<div
+ style="left: 293.688px; top: 419.952px; font-size: 16.6667px; font-family: monospace;">Console.WriteLine(&#8220;Nr.{0}. 
+{1}&#8221;, i+1, copii[i].nume);</div>
+ 
+<div
+ style="left: 220.355px; top: 443.286px; font-size: 16.6667px; font-family: monospace;">} 
+...</div>
+ 
+<div
+ style="left: 262.855px; top: 441.869px; font-size: 13.3333px; font-family: monospace;">17</div>
+ 
+<div
+ style="left: 202.021px; top: 466.619px; font-size: 16.6667px; font-family: monospace;">}</div>
+ 
+<div
+ style="left: 165.355px; top: 489.952px; font-size: 16.6667px; font-family: monospace;">...</div>
+ 
+<div
+ style="left: 165.355px; top: 513.286px; font-size: 16.6667px; font-family: monospace;">Fetita 
+c = new Fetita();Copil.adaug_copil(c);<br>
+ <br>
+ <big><b>APLICATIA 3.</b></big><br>
+ 
+<div
+ style="left: 165.354px; top: 816.619px; font-size: 16.6667px; font-family: monospace;">public 
+class Copil</div>
+ 
+<div
+ style="left: 202.021px; top: 839.952px; font-size: 16.6667px; font-family: monospace;">{ 
+...</div>
+ 
+<div
+ style="left: 220.354px; top: 863.286px; font-size: 16.6667px; font-family: monospace;">public 
+string nume;</div>
+ 
+<div
+ style="left: 220.354px; top: 886.619px; font-size: 16.6667px; font-family: monospace;">public 
+virtual void se_joaca()</div>
+ 
+<div
+ style="left: 501.732px; top: 885.127px; font-size: 18.3333px; font-family: monospace;">//virtual 
+&agrave; se poate suprascrie la</div>
+ 
+<div
+ style="left: 141.732px; top: 908.46px; font-size: 18.3333px; font-family: monospace;">derivare</div>
+ 
+<div
+ style="left: 238.688px; top: 933.286px; font-size: 16.6667px; font-family: monospace;">{Console.WriteLine(&#8220;{0} 
+se joaca.&#8221;, this.nume);}</div>
+ 
+<div
+ style="left: 220.355px; top: 956.619px; font-size: 16.6667px; font-family: monospace;">public 
+void se_joaca(string jucaria)</div>
+ 
+<div
+ style="left: 561.732px; top: 955.127px; font-size: 18.3333px; font-family: monospace;">//nu 
+permite redefinire</div>
+ 
+<div
+ style="left: 774.399px; top: 955.202px; font-size: 13.3333px; font-family: monospace;">18</div>
+ 
+<div
+ style="left: 238.688px; top: 979.952px; font-size: 16.6667px; font-family: monospace;">{Console.WriteLine(&#8220;{0} 
+se joaca cu {1}.&#8221;, this.nume, jucaria);}</div>
+ 
+<div
+ style="left: 202.021px; top: 1003.29px; font-size: 16.6667px; font-family: monospace;">} 
+</div>
+ 
+<div
+ style="left: 261.732px; top: 1001.79px; font-size: 18.3333px; font-family: monospace;">//supra&icirc;nc&atilde;rcarea 
+metodei </div>
+ 
+<div
+ style="left: 501.899px; top: 1003.35px; font-size: 16.6667px; font-family: monospace;">se_joaca</div>
+ 
+<div
+ style="left: 165.354px; top: 1026.62px; font-size: 16.6667px; font-family: monospace;">class 
+Fetita:Copil</div>
+ 
+<div
+ style="left: 202.021px; top: 1049.95px; font-size: 16.6667px; font-family: monospace;">{ 
+  public override void se_joaca()</div>
+ 
+<div
+ style="left: 501.732px; top: 1048.46px; font-size: 18.3333px; font-family: monospace;">//redefinire 
+&agrave; comportament polimorfic</div>
+ 
+<div
+ style="left: 257.022px; top: 1073.29px; font-size: 16.6667px; font-family: monospace;">{Console.WriteLine(&#8220;{0} 
+leagana papusa.&#8221;,this.nume);}</div>
+ 
+<div
+ style="left: 202.021px; top: 1096.62px; font-size: 16.6667px; font-family: monospace;">}</div>
+ 
+<div
+ style="left: 165.355px; top: 1119.95px; font-size: 16.6667px; font-family: monospace;">class 
+Baiat:Copil</div>
+ 
+<div
+ style="left: 202.022px; top: 1143.29px; font-size: 16.6667px; font-family: monospace;">{ 
+  public override void se_joaca()</div>
+ 
+<div
+ style="left: 275.355px; top: 1166.62px; font-size: 16.6667px; font-family: monospace;">{Console.WriteLine(&#8220;{0} 
+chinuie pisica.&#8221;,this.nume);}</div>
+ 
+<div
+ style="left: 202.021px; top: 1189.95px; font-size: 16.6667px; font-family: monospace;">}</div>
+ 
+<div
+ style="left: 141.732px; top: 141.118px; font-size: 16.6667px; font-family: monospace;">Fetita 
+c = new Fetita();c.se_joaca(&#8220;pisica&#8221;);c.se_joaca(); </div>
+ 
+<div
+ style="left: 658.11px; top: 139.626px; font-size: 18.3333px; font-family: monospace;">//polimorfism</div>
+ 
+<div
+ style="left: 141.732px; top: 164.451px; font-size: 16.6667px; font-family: monospace;">Baiat 
+c = new Baiat();c.se_joaca(&#8220;calculatorul&#8221;);c.se_joaca();</div>
+ 
+<div
+ style="left: 718.11px; top: 162.959px; font-size: 18.3333px; font-family: monospace;">//polimorfism 
+</div>
+ 
+<div
+ style="left: 141.732px; top: 187.784px; font-size: 16.6667px; font-family: monospace;">Copil 
+c = new Copil();c.se_joaca();</div>
+ 
+<div
+ style="left: 478.11px; top: 186.293px; font-size: 18.3333px; font-family: monospace;">//polimorfism</div>
+ <br>
+ <br>
+ </div>
+ <br>
+ <br>
+</body>
+</html>
